@@ -14,17 +14,17 @@ void TelaPrincipal(void)
     printf("COL=,  LIN=   INSERT |||| LISTA");
 }
 
-void MenuParametros(int Linha, int RecEsq, int RecDir)
+void MenuParametros(int *Linha, int *RecEsq, int *RecDir)
 {
     system("cls");
     printf("\t\t** EDITOR DE TEXTO **\n\n");
 	printf("### Menu de Configuracao de Parametros ###\n\n");
 	printf("Primeira Linha: ");
-    scanf("%d", &Linha);
+    scanf("%d", &*Linha);
 	printf("Recuo Esquerdo: ");
-    scanf("%d", &RecEsq);
+    scanf("%d", &*RecEsq);
     printf("Recuo Direito: ");
-    scanf("%d", &RecDir);
+    scanf("%d", &*RecDir);
 }
 
 int main(void)

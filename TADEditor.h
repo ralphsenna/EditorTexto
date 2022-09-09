@@ -16,4 +16,7 @@ struct linha
 typedef struct linha Linha;
 
 
-
+void Init(Linha *Texto)
+{
+    (*Texto) = NULL;
+}

@@ -6,6 +6,14 @@
 #include "TADEditor.h"
 
 
+void TelaPrincipal(void)
+{
+    printf("F2-Abrir       F3-Salvar       F4-Sair       F5-Exibir\n");
+    printf("-------------------------------------------------------------------------------\n\n\n\n\n\n");
+    printf("-------------------------------------------------------------------------------\n");
+    printf("COL=,  LIN=   INSERT |||| LISTA");
+}
+
 void MenuParametros(int Linha, int RecEsq, int RecDir)
 {
     system("cls");
@@ -21,8 +29,10 @@ void MenuParametros(int Linha, int RecEsq, int RecDir)
 
 int main(void)
 {
-    Linha *Texto=NULL;
+    Linha *Texto;
     int Linha, RecEsq, RecDir;
+    Init(&Texto);
     MenuParametros(&Linha, &RecEsq, &RecDir);
+    TelaPrincipal();
     return 0;
 }
